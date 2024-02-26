@@ -1,33 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amalangi <amalangin@student.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/19 16:59:56 by amalangi          #+#    #+#             */
-/*   Updated: 2024/02/23 16:26:15 by amalangi         ###   ########.fr       */
+/*   Created: 2024/02/23 16:28:53 by amalangi          #+#    #+#             */
+/*   Updated: 2024/02/26 08:37:13 by amalangi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/minishell.h"
+#include "../../include/minishell.h"
 
-int main(int argc, char **argv, char **env)
+int fill_input(t_data *data, char *input)
 {
-    (void)argc;
-    (void)argv;
-    (void)env;
-    char *input;
-
-    while (1)
-    {
-        input = readline("minishell $> ");
-        if (input)
-        {
-            //add_history(input);
-            printf("%s\n", input);
-            free(input);
-        }
-    }
+    
     return (0);
 }
